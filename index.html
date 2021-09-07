@@ -14,12 +14,34 @@
 <body>
     <div class="sidebar">
       <ul class="items">
-          <li><i class="fas fa-home"></i> Overview</li>
-          <li><i class="far fa-chart-bar"></i> Stats</li>
-          <li><i class="far fa-folder"></i> Projects</li>
-          <li><i class="far fa-comment-alt"></i> Chat</li>
-          <li><i class="far fa-calendar-alt"></i> Calendar</li>
+          <li><i class="fas fa-home"></i>Overview</li>
+          <li><i class="far fa-chart-bar"></i>Stats</li>
+          <li><i class="fas fa-chevron-right"></i>Projects <span><button class="plus"><i class="fas fa-plus"></i></button></span></li>
+          <li><i class="far fa-comment-alt"></i>Chat</li>
+          <li><i class="far fa-calendar-alt"></i>Calendar</li>
       </ul>
     </div>
+    <!-- add project form -->
+    <div class="project-form">
+        <div class="form-header">
+            <h1>Add Project</h1>
+        </div>
+        <div class="form-items">
+           <label for="name">Name</label> <br>
+           <input type="text" id="name"><br>
+           <label for="color">Color</label><br>
+           <input type="text" value="charcoal" id="color">
+        </div>
+        <div class="favorite">
+            <div class="fav-btn">
+                 <div class="main-clr"></div>
+                 <div class="circle"></div>
+            </div>
+            <div class="para">
+                <p>Add to favorites</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
