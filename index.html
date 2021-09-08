@@ -24,22 +24,28 @@
     <!-- add project form -->
     <div class="project-form">
         <div class="form-header">
-            <h1>Add Project</h1>
+            <p>Add Project</p>
         </div>
-        <div class="form-items">
-           <label for="name">Name</label> <br>
-           <input type="text" id="name"><br>
-           <label for="color">Color</label><br>
-           <input type="text" value="charcoal" id="color">
+        <div class="main-form">
+            <div class="form-items">
+                <label for="name">Name</label> <br>
+                <input type="text" id="name"><br>
+                <label for="color">Color</label><br>
+                <input type="text" value="charcoal" id="color">
+             </div>
+             <div class="favorite">
+                 <div class="fav-btn">
+                      <div class="main-clr"></div>
+                      <div class="circle"></div>
+                 </div>
+                 <div class="para">
+                     <p>Add to favorites</p>
+                 </div>
+             </div>
         </div>
-        <div class="favorite">
-            <div class="fav-btn">
-                 <div class="main-clr"></div>
-                 <div class="circle"></div>
-            </div>
-            <div class="para">
-                <p>Add to favorites</p>
-            </div>
+        <div class="form-footer">
+            <button class="add">add</button>
+            <button class='cancel'>cancel</button>
         </div>
     </div>
     <script src="app.js"></script>

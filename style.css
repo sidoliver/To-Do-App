@@ -45,7 +45,36 @@
 .fa-plus:hover {
     background-color:rgba(207, 204, 204, 0.288)
 }
-
+/* project form */
+ .project-form {
+    margin: 20px;
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    top: 250px;
+    right: -8px;
+    display:none;
+ }
+ /* project form display none to dispay flex */
+ .show-form {
+     display: block;
+ }
+ .form-header {
+     background-color: #44e66c;
+     border-radius: 10px 10px 0 0;
+ }
+ .form-header p {
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    padding: 10px;
+ }
+ /* form items */
+ .main-form {
+    background-color: rgb(226, 218, 218);
+    height: 350px;
+    width: 350px;
+    padding: 20px 0 20px 15px;
+ }
 /* favorite btn */
 .favorite {
     display: flex;
@@ -57,9 +86,10 @@
 }
 .main-clr {
     background-color: rgb(179, 178, 178);
-    height: 20px;
+    height: 22px;
     width: 40px;
     border-radius: 10px;
+    transition: all 0.5s;
 }
 .circle {
     background-color: rgb(255, 255, 255);
@@ -67,11 +97,41 @@
     width: 15px;
     border-radius: 50%;
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: 4px;
+    transition: all 0.5s;
+}
+/* main color javascript */
+.main-clr-animation {
+    background-color: orange;
+    transition: all 0.5s;
+}
+/* circle javascript */
+.circle-animation {
+    background-color: green;
+    left: 20px;
+    transition: all 0.5s;
 }
 .para {
     margin-left: 10px;
     font-family: Montserrat;
+}
+/* form footer */
+.form-footer {
+    background-color: #44e66c;
+    padding: 14px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.form-footer button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border:none;
+    margin:0 10px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: capitalize;
 }
 
