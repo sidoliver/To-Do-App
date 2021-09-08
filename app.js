@@ -27,12 +27,16 @@ const addNewProject = function() {
     const li = document.createElement('li')
     const text = name.value
     li.innerHTML = `<i class="fas fa-circle"></i>${text}`  
+    li.style.cursor = 'pointer'
     ul.appendChild(li) 
-    const circle = document.querySelector('.fa-circle')
+    // coloring the circle 
+    const circleLastChild = ul.lastChild
+    const circle = circleLastChild.querySelector('i')
     const color = document.getElementById('color')
     colorText = color.value
     circle.style.color = colorText
     name.value = ''
+    color.value = 'charcoal'
 }
 // eventListeners
 plusBtn.addEventListener('click',openForm)
